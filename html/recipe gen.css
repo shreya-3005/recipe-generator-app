@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maharashtrian Recipe Generator</title>
+
+  <!-- ✨ Page Styling with Your Selected Background Image -->
+  <style>
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      background: url('https://thumbs.dreamstime.com/z/culinary-background-recipes-frame-fresh-vegetables-ingredients-cooking-food-background-copy-space-table-culinary-168640059.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      text-align: center;
+      position: relative;
+      z-index: 0;
+    }
+
+    /* Overlay to improve text readability */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+      z-index: -1;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      color: #ffeaa7;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+    p {
+      font-size: 1.4rem;
+      margin: 10px 0;
+      text-shadow: 1px 1px 2px #000;
+    }
+
+    code {
+      font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+      background-color: rgba(255, 255, 255, 0.2);
+      color: #f9ca24;
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+
+    .chatbot-container {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+    }
+
+    zapier-interfaces-chatbot-embed {
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+      border-radius: 12px;
+      overflow: hidden;
+      background-color: white;
+    }
+  </style>
+
+  <!-- 🤖 Zapier Chatbot Script -->
+  <script async type="module" src="https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js"></script>
+</head>
+
+<body>
+  <h1>Welcome to Maharashtrian Recipe Generator</h1>
+  <p>Give Me Ingredients</p>
+  <p>I Will <code>Give You</code> a Traditional Maharashtrian Recipe</p>
+
+  <div class="chatbot-container">
+    <zapier-interfaces-chatbot-embed
+      is-popup="false"
+      chatbot-id="cm9sktu550013y0ojoxylzw3q"
+      height="600px"
+      width="400px">
+    </zapier-interfaces-chatbot-embed>
+  </div>
+</body>
+</html>
